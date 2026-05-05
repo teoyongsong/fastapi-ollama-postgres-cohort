@@ -2,6 +2,8 @@
 
 A staged, hands-on course that builds the smallest serious AI web application — `Browser → FastAPI → Ollama → Postgres → Browser` — one fundamental at a time, across nine modules.
 
+> **License:** [PolyForm Noncommercial 1.0.0](LICENSE). You may use this code freely for personal learning and non-commercial educational use (and you can publish your forked V1 as a portfolio piece per `docs/publish_your_work.md`). You may not use it as the curriculum for a fee-charging course. See [NOTICE.md](NOTICE.md) for plain-English allowed/not-allowed lists.
+
 This repo is your starting point. You'll work through it module-by-module during the live session and on your own afterwards. By the end, you'll have built a working V1 you can publish to your own GitHub as a portfolio piece.
 
 ## Welcome
