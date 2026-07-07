@@ -39,19 +39,32 @@ This checklist is the **union of both**. Items marked **🧸 apply to the Bedtim
 - [ ] **Gemini** — https://gemini.google.com, sign in with Google (mobile: search "Google Gemini")
 - [ ] **Perplexity** — https://www.perplexity.ai → Download
 
-## 4. Windows only — install WSL2 first
+## 4. WSL2 + Ubuntu (Windows only)
 
 *macOS users: skip to §5.*
 
-You'll use **WSL2 (Ubuntu inside Windows)** as your terminal for the entire course. PowerShell is used **exactly once — right here — and never again.**
+You'll run the whole course inside **WSL2 (Ubuntu inside Windows)**. **If you took an earlier module in this programme, you already set this up — verify it and skip ahead.** Don't reinstall.
+
+### Already have WSL2/Ubuntu? Check, then skip to §5.
+
+- [ ] Open your **Ubuntu terminal** (Start menu → **Ubuntu**; the prompt ends in `$`).
+- [ ] Run `uname -a` → the output contains `Linux`.
+- [ ] Run `lsb_release -d` → it shows **`Ubuntu 24.04`**.
+- [ ] Both look right? **You're done with §4 — skip to §5.**
+      *(If `lsb_release` shows a version other than 24.04 — e.g. 26.04 — message your instructor before class. The course tools target Ubuntu 24.04 / Python 3.11–3.13.)*
+
+### First time setting up WSL2? Install it now.
+
+PowerShell is used **exactly once — right here — and never again.**
 
 - [ ] Open **PowerShell as administrator** (search "PowerShell" → right-click → **Run as administrator**).
 - [ ] Run: `wsl --install -d Ubuntu-24.04`
       *(The `-d Ubuntu-24.04` pins the version the course is built and tested for. Don't drop it — a newer Ubuntu ships Python 3.14, which the course tools don't support yet.)*
 - [ ] **Reboot** when prompted. Ubuntu launches automatically after reboot.
 - [ ] Create a **UNIX username and password** (nothing appears as you type the password — that's normal).
-- [ ] Verify in Ubuntu: `uname -a` → the output contains `Linux`.
-- [ ] **From here on, every command runs in the Ubuntu terminal** (Start menu → Ubuntu; prompt ends in `$`). If your prompt ends in `>`, that's PowerShell — switch to Ubuntu.
+- [ ] Verify: `uname -a` → the output contains `Linux`.
+
+**Either way — from here on, every command runs in the Ubuntu terminal** (Start menu → Ubuntu; prompt ends in `$`). If your prompt ends in `>`, that's PowerShell — switch to Ubuntu.
 
 > Deeper WSL2 walkthrough (first launch, and the important **work in `~/code/`, not `/mnt/c/`** rule): `setup_walkthrough.md` §1.
 
